@@ -51,6 +51,7 @@ function App() {
     let year = d.getFullYear();
     return `${day} ${date} ${month}, ${year}`;
   };
+
   return (
     <div
       className={
@@ -82,6 +83,12 @@ function App() {
             </div>
             <div className="weather_box">
               <div className="temp">{Math.round(weather.main.temp)}°C</div>
+              <div className="humidity">
+                Humidity :{weather.main.humidity} %
+              </div>
+              <div className="pressure">
+                Pressure : {weather.main.pressure} hPa
+              </div>
               <div className="weather">{weather.weather[0].main}</div>
             </div>
           </div>
