@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   box-sizing: border-box;
 }
 body {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  width: 600px;
+  background-image: url(/src/assets/body.jpg);
+  background-size: cover;
 }
+
 .app {
   background-image: url("/src/assets/cold.jpg");
   background-size: cover;
